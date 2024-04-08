@@ -1,0 +1,131 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 1px 3px -2px #000;
+  position: relative;
+}
+
+.navbar.colorChange {
+  background-color: #fff;
+}
+
+.navbar.colorChange .colorChange {
+  height: 20px !important;
+}
+
+.navbar.colorChange .nav-login-cart button {
+  border: 1px solid #7a7a7a;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #626262;
+}
+
+.nav-menu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  margin-bottom: -21px;
+}
+
+.nav-menu hr {
+  border: none;
+  width: 80%;
+  height: 3px;
+  background-color: #ff4141;
+  border-radius: 10px;
+  margin-top: 2px;
+  opacity: 1;
+}
+
+.nav-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.nav-login-cart button {
+  width: 120px;
+  outline: none;
+  border: 1px solid #7a7a7a;
+  color: #515151;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 8px 24px;
+}
+
+.nav-login-cart button:active {
+  background-color: #f3f3f3;
+}
+
+.nav-login-cart img {
+  width: 34px;
+}
+
+.nav-cart-count {
+  display: flex;
+  width: 22px;
+  height: 22px;
+  justify-content: center;
+  align-items: center;
+  margin-top: -35px;
+  margin-left: -55px;
+  border-radius: 11px;
+  font-size: 14px;
+  background-color: red;
+  color: #fff;
+}
+
+.form-control:focus {
+  border: 1px solid #ccc !important;
+  box-shadow: none !important;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-login-cart {
+    display: flex;
+  }
+
+  .navigation {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid black;
+  }
+
+  .navigation.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navigation.active ul {
+    flex-direction: column;
+    align-items: left;
+    height: 200px;
+  }
+}
