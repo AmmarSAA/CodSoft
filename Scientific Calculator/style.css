@@ -1,0 +1,100 @@
+:root {
+  --body-background: rgb(22, 22, 22);
+  --button-color: #2a2a2a;
+  --button-hover: #3d3d3d;
+  --max-width: 35rem;
+  font-size: 16px;
+}
+
+/* css styles */
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "PT Sans", serif;
+}
+
+body {
+  background: var(--body-background);
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-area {
+  color: white;
+  position: relative;
+  background: transparent;
+  padding: 0.5rem 0.5rem 1rem;
+  width: 100%;
+}
+
+#display {
+  background: transparent;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  text-align: right;
+  font-size: 6vh;
+  border: 0;
+  outline: 0;
+}
+
+.button-area {
+  max-width: 95vw;
+  position: static;
+  background: transparent;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 5px;
+  border-bottom-left-radius: 10px;
+}
+
+.button {
+  color: white;
+  text-align: center;
+  font-size: 2.7vh;
+  background: var(--button-color);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.sup {
+  font-size: 0.7rem;
+  position: relative;
+  top: -5px;
+  z-index: 1;
+}
+
+.sub {
+  position: relative;
+  top: 5px;
+  z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  :root {
+    font-size: 25px;
+  }
+}
